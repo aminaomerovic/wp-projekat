@@ -11,13 +11,13 @@
   </div>
 </section>
 
-<!-- Sadržaj same stranice koju si postavila kao Homepage -->
+<!-- Homepage -->
 <div class="container" style="padding:28px 0">
   <?php
   if ( have_posts() ) {
     while ( have_posts() ) {
       the_post();
-      the_content(); // Ovde će se prikazati sadržaj iz WordPress editora (O nama).
+      the_content(); 
     }
   }
   ?>
